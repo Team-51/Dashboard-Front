@@ -3,22 +3,37 @@
     import { fade } from 'svelte/transition';
       const images = [
         {
-          img: "./images/building.jpeg",
+          img: "/images/sample_1.jpg",
           text1: "",
           text2: ""
         },
         {
-          img: "./images/lib1.jpg",
+          img: "/images/sample_3.jpg",
           text1: "",
           text2: ""
         },
         {
-          img: "./images/lib2.jpg",
+          img: "/images/sample_2.jpg",
           text1: "",
           text2: ""
         },
         {
-          img: "./images/lib3.jpg",
+          img: "/images/sample_1.jpg",
+          text1: "",
+          text2: ""
+        },
+        {
+          img: "/images/sample_3.jpg",
+          text1: "",
+          text2: ""
+        },
+        {
+          img: "/images/sample_2.jpg",
+          text1: "",
+          text2: ""
+        },
+        {
+          img: "/images/sample_1.jpg",
           text1: "",
           text2: ""
         },
@@ -28,11 +43,13 @@
           var slider = tns({
             container: ".my-slider",
             autoHeight: true,
-            items: 1,
+            items: 4,
             swipeAngle: false,
-            speed: 400,
+            speed: 600,
+            autoplayTimeout: 1000,
             nav: false,
-            autoplay: false,
+            autoplay: true,
+            autoplayButtonOutput: false,
             prevButton:document.getElementById("prev-carousel"),
             nextButton:document.getElementById("next-carousel"),
             mouseDrag: true
@@ -41,8 +58,8 @@
     </script>
     <div class="my-slider"  >
       {#each images as item,i }
-          <div >
-            <img src = {item.img} alt ={i} style="width:100%; height:300px; object-fit: cover;"/>
+          <div  class="mx-2 my-2" >
+            <img src = {item.img} alt ={i} style="width:100%; height:200px; object-fit:   cover;"/>
           </div>
       {/each}
     </div>

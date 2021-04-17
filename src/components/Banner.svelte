@@ -43,8 +43,8 @@
 		float: left;
     }
 		.featured_image {
-			width: 100%;
-			max-width: 100%;
+			width: 90%;
+			max-width: 90%;
             
 			border-radius: .5em;
 			-webkit-box-shadow: 0px 0px 76px 0px rgba(0, 0, 0, 0.47);

@@ -1,6 +1,5 @@
 <script>
     	import Carousel from '../components/Carousel.svelte';
-
 </script>
 <section class="relative block" style="height: 500px;">
     <div
@@ -45,7 +44,7 @@
               <div class="relative">
                 <img
                   alt="..."
-                  src="./assets/img/team-2-800x800.jpg"
+                  src="/images/prof_1.jpeg"
                   class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16"
                   style="max-width: 150px;"
                 />
@@ -91,7 +90,7 @@
             <h3
               class="text-4xl font-semibold leading-normal mb-2 text-gray-800 mb-2"
             >
-              Jenna Stones
+              Saksham Mrig
             </h3>
             <div
               class="text-sm leading-normal mt-0 mb-2 text-gray-500 font-bold uppercase"
@@ -99,7 +98,7 @@
               <i
                 class="fas fa-map-marker-alt mr-2 text-lg text-gray-500"
               ></i>
-              Los Angeles, California
+              Gurgaon, India
             </div>
           </div>
           <div class="mt-10 py-10 border-t border-gray-300 text-center">
@@ -120,7 +119,6 @@
                 <p class="mb-4 text-lg leading-relaxed text-gray-800">
                     <b>
                        GOT:  Extraordinary untill season 8
-        
                     </b> 
                     <br/>
                     This is the first series i would recommend to anybody , it is an amazing piece of work , the most stunning TV series you will ever watch. Why i gave it 9/10 because of the last season, it's still good but very disappointing compared to all the seasons. YOU will enjoy every episode
