@@ -22,7 +22,7 @@
 </script>
 
 <Router>
-  <Header>
+  <Header />
   <main>
     <Route path="cast/:id">
       <Cast />
