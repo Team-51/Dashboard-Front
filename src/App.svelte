@@ -13,25 +13,37 @@
 	import Settings from './routes/Settings.svelte';
 	import Tailwindcss from './Tailwindcss.svelte';
 	import Carousel from './components/Carousel.svelte';
+	import Profile from './routes/Profile.svelte';
+	import Search	 from './routes/Search.svelte';
+	import Feed	 from './routes/Feed.svelte';
+	import Cast	 from './routes/Cast.svelte';
 </script>
 
-<button on:click={() => {state ++;state=state%5}}>
+<button on:click={() => {state ++;state=state%8}}>
 go next{">"}
 </button>
 
 <main>
 	<slot>
 		{#if state == 0}
-		<Login />
-		{:else if state == 1} 
-		<Home />
+		<Cast />
+		{:else if state == 1}
+		<Search />
 		{:else if state == 2} 
-		<Settings />
+		<Profile />
 		{:else if state == 3} 
-		<!-- <Home {profile}/> -->
-		<Carousel jsonData={["./favicon.png","./logo.svg","./logo.svg","./logo.svg"]}/>
+		<Home />
 		{:else if state == 4} 
+		<Settings />
+		{:else if state == 5} 
+		great
+		<!-- <Home {profile}/> -->
+		<!-- <Carousel jsonData={["./favicon.png","./logo.svg","./logo.svg","./logo.svg"]}/> -->
+		{:else if state == 6} 
 			<NewAccount />
+		{:else if state == 7} 
+		<Login />
+
 		{/if}
 	</slot>
 </main>
