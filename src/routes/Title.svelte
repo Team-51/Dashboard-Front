@@ -1,5 +1,5 @@
 <script>
-    export let profile
+    export let profile;
     import Banner from '../components/Banner.svelte';
     import {onMount} from 'svelte';
     onMount ( () => {
