@@ -1781,21 +1781,26 @@ function create_fragment$3(ctx) {
   var ul;
   var li0;
   var a1;
-  var i;
+  var i0;
   var t7;
-  var t8_value = (
-  /*profile*/
-  ctx[0] || "Login") + "";
   var t8;
-  var a1_href_value;
-  var t9;
   var li1;
   var a2;
+  var i1;
+  var t9;
+  var t10_value = (
+  /*profile*/
+  ctx[0] || "Login") + "";
   var t10;
+  var a2_href_value;
   var t11;
   var li2;
   var a3;
   var t12;
+  var t13;
+  var li3;
+  var a4;
+  var t14;
   var block = {
     c: function create() {
       header = element("header");
@@ -1817,17 +1822,22 @@ function create_fragment$3(ctx) {
       ul = element("ul");
       li0 = element("li");
       a1 = element("a");
-      i = element("i");
-      t7 = space();
-      t8 = text(t8_value);
-      t9 = space();
+      i0 = element("i");
+      t7 = text("\n\t\tTOP 250 Movies");
+      t8 = space();
       li1 = element("li");
       a2 = element("a");
-      t10 = text("Advanced Search");
+      i1 = element("i");
+      t9 = space();
+      t10 = text(t10_value);
       t11 = space();
       li2 = element("li");
       a3 = element("a");
-      t12 = text("Dashboard");
+      t12 = text("Advanced Search");
+      t13 = space();
+      li3 = element("li");
+      a4 = element("a");
+      t14 = text("Dashboard");
       this.h();
     },
     l: function claim(nodes) {
@@ -1894,15 +1904,14 @@ function create_fragment$3(ctx) {
         href: true
       });
       var a1_nodes = children(a1);
-      i = claim_element(a1_nodes, "I", {
+      i0 = claim_element(a1_nodes, "I", {
         class: true
       });
-      children(i).forEach(detach_dev);
-      t7 = claim_space(a1_nodes);
-      t8 = claim_text(a1_nodes, t8_value);
+      children(i0).forEach(detach_dev);
+      t7 = claim_text(a1_nodes, "\n\t\tTOP 250 Movies");
       a1_nodes.forEach(detach_dev);
       li0_nodes.forEach(detach_dev);
-      t9 = claim_space(ul_nodes);
+      t8 = claim_space(ul_nodes);
       li1 = claim_element(ul_nodes, "LI", {
         class: true
       });
@@ -1912,7 +1921,12 @@ function create_fragment$3(ctx) {
         href: true
       });
       var a2_nodes = children(a2);
-      t10 = claim_text(a2_nodes, "Advanced Search");
+      i1 = claim_element(a2_nodes, "I", {
+        class: true
+      });
+      children(i1).forEach(detach_dev);
+      t9 = claim_space(a2_nodes);
+      t10 = claim_text(a2_nodes, t10_value);
       a2_nodes.forEach(detach_dev);
       li1_nodes.forEach(detach_dev);
       t11 = claim_space(ul_nodes);
@@ -1925,9 +1939,22 @@ function create_fragment$3(ctx) {
         href: true
       });
       var a3_nodes = children(a3);
-      t12 = claim_text(a3_nodes, "Dashboard");
+      t12 = claim_text(a3_nodes, "Advanced Search");
       a3_nodes.forEach(detach_dev);
       li2_nodes.forEach(detach_dev);
+      t13 = claim_space(ul_nodes);
+      li3 = claim_element(ul_nodes, "LI", {
+        class: true
+      });
+      var li3_nodes = children(li3);
+      a4 = claim_element(li3_nodes, "A", {
+        class: true,
+        href: true
+      });
+      var a4_nodes = children(a4);
+      t14 = claim_text(a4_nodes, "Dashboard");
+      a4_nodes.forEach(detach_dev);
+      li3_nodes.forEach(detach_dev);
       ul_nodes.forEach(detach_dev);
       nav_nodes.forEach(detach_dev);
       header_nodes.forEach(detach_dev);
@@ -1952,27 +1979,34 @@ function create_fragment$3(ctx) {
       add_location(button, file$2, 24, 2, 699);
       attr_dev(form, "class", "mb-4 w-full md:mb-0 md:w-1/4");
       add_location(form, file$2, 17, 0, 457);
-      attr_dev(i, "class", "fa fa-user");
-      add_location(i, file$2, 36, 3, 1054);
+      attr_dev(i0, "class", "fa fa-list");
+      add_location(i0, file$2, 36, 3, 1021);
       attr_dev(a1, "class", "block no-underline hover:underline py-2 text-grey-darkest hover:text-black md:border-none md:p-0");
-      attr_dev(a1, "href", a1_href_value =
+      attr_dev(a1, "href", "./list/123");
+      add_location(a1, file$2, 32, 3, 881);
+      attr_dev(li0, "class", "md:ml-4");
+      add_location(li0, file$2, 31, 1, 857);
+      attr_dev(i1, "class", "fa fa-user");
+      add_location(i1, file$2, 45, 3, 1276);
+      attr_dev(a2, "class", "block no-underline hover:underline py-2 text-grey-darkest hover:text-black md:border-none md:p-0");
+      attr_dev(a2, "href", a2_href_value =
       /*profile*/
       ctx[0] ? "./profile/".concat(
       /*profile*/
       ctx[0]) : "./login");
-      add_location(a1, file$2, 32, 3, 881);
-      attr_dev(li0, "class", "md:ml-4");
-      add_location(li0, file$2, 31, 1, 857);
-      attr_dev(a2, "class", "border-t block no-underline hover:underline py-2 text-grey-darkest hover:text-black md:border-none md:p-0");
-      attr_dev(a2, "href", "./search");
-      add_location(a2, file$2, 41, 3, 1144);
+      add_location(a2, file$2, 41, 3, 1103);
       attr_dev(li1, "class", "md:ml-4");
-      add_location(li1, file$2, 40, 1, 1120);
+      add_location(li1, file$2, 40, 1, 1079);
       attr_dev(a3, "class", "border-t block no-underline hover:underline py-2 text-grey-darkest hover:text-black md:border-none md:p-0");
-      attr_dev(a3, "href", "./settings");
-      add_location(a3, file$2, 49, 3, 1344);
+      attr_dev(a3, "href", "./search");
+      add_location(a3, file$2, 50, 3, 1366);
       attr_dev(li2, "class", "md:ml-4");
-      add_location(li2, file$2, 48, 1, 1320);
+      add_location(li2, file$2, 49, 1, 1342);
+      attr_dev(a4, "class", "border-t block no-underline hover:underline py-2 text-grey-darkest hover:text-black md:border-none md:p-0");
+      attr_dev(a4, "href", "./settings");
+      add_location(a4, file$2, 58, 3, 1566);
+      attr_dev(li3, "class", "md:ml-4");
+      add_location(li3, file$2, 57, 1, 1542);
       attr_dev(ul, "class", "list-reset md:flex md:items-center");
       add_location(ul, file$2, 30, 2, 808);
       add_location(nav, file$2, 29, 0, 800);
@@ -1999,17 +2033,22 @@ function create_fragment$3(ctx) {
       append_dev(nav, ul);
       append_dev(ul, li0);
       append_dev(li0, a1);
-      append_dev(a1, i);
+      append_dev(a1, i0);
       append_dev(a1, t7);
-      append_dev(a1, t8);
-      append_dev(ul, t9);
+      append_dev(ul, t8);
       append_dev(ul, li1);
       append_dev(li1, a2);
+      append_dev(a2, i1);
+      append_dev(a2, t9);
       append_dev(a2, t10);
       append_dev(ul, t11);
       append_dev(ul, li2);
       append_dev(li2, a3);
       append_dev(a3, t12);
+      append_dev(ul, t13);
+      append_dev(ul, li3);
+      append_dev(li3, a4);
+      append_dev(a4, t14);
     },
     p: function update(ctx, _ref) {
       var _ref2 = _slicedToArray(_ref, 1),
@@ -2017,18 +2056,18 @@ function create_fragment$3(ctx) {
 
       if (dirty &
       /*profile*/
-      1 && t8_value !== (t8_value = (
+      1 && t10_value !== (t10_value = (
       /*profile*/
-      ctx[0] || "Login") + "")) set_data_dev(t8, t8_value);
+      ctx[0] || "Login") + "")) set_data_dev(t10, t10_value);
 
       if (dirty &
       /*profile*/
-      1 && a1_href_value !== (a1_href_value =
+      1 && a2_href_value !== (a2_href_value =
       /*profile*/
       ctx[0] ? "./profile/".concat(
       /*profile*/
       ctx[0]) : "./login")) {
-        attr_dev(a1, "href", a1_href_value);
+        attr_dev(a2, "href", a2_href_value);
       }
     },
     i: noop,
@@ -3169,43 +3208,43 @@ var App = /*#__PURE__*/function (_SvelteComponentDev) {
 var ignore = [];
 var components = [{
   js: function js() {
-    return Promise.all([import('./index.7f707a1b.js'), __inject_styles(["client-d6828986.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./index.b6a0af15.js'), __inject_styles(["client-d6828986.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./newAccount.17119f86.js'), __inject_styles(["client-d6828986.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./newAccount.d2943c2b.js'), __inject_styles(["client-d6828986.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./settings.25642c86.js'), __inject_styles(["client-d6828986.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./settings.d84ab665.js'), __inject_styles(["client-d6828986.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./[id].3cf7f21b.js'), __inject_styles(["client-d6828986.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./[id].a8f2618e.js'), __inject_styles(["client-d6828986.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./search.7741880c.js'), __inject_styles(["client-d6828986.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./search.fb5aaf34.js'), __inject_styles(["client-d6828986.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./about.c7777013.js'), __inject_styles(["client-d6828986.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./about.e33c67ca.js'), __inject_styles(["client-d6828986.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./login.d0e9c684.js'), __inject_styles(["client-d6828986.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./login.91f7f668.js'), __inject_styles(["client-d6828986.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./title.1e7b2554.js'), __inject_styles(["client-d6828986.css","title-340612a3.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./title.2d36175c.js'), __inject_styles(["client-d6828986.css","title-340612a3.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./cast.ac34cdc3.js'), __inject_styles(["client-d6828986.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./cast.25da670a.js'), __inject_styles(["client-d6828986.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./[id].2f96ea80.js'), __inject_styles(["client-d6828986.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./[id].d7f184bf.js'), __inject_styles(["client-d6828986.css"])]).then(function(x) { return x[0]; });
   }
 }];
 var routes = function (d) {

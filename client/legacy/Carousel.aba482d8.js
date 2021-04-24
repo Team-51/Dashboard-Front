@@ -1,4 +1,4 @@
-import { C as identity, _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, s as safe_not_equal, d as _assertThisInitialized, e as dispatch_dev, D as _createClass, S as SvelteComponentDev, E as validate_each_argument, B as validate_slots, F as onMount, G as regenerator, H as onDestroy, g as element, f as space, l as claim_element, m as children, j as detach_dev, k as claim_space, p as attr_dev, I as set_style, r as add_location, u as insert_dev, v as append_dev, J as _slicedToArray, x as noop, K as destroy_each } from './client.0b81d8bd.js';
+import { C as identity, _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, s as safe_not_equal, d as _assertThisInitialized, e as dispatch_dev, D as _createClass, S as SvelteComponentDev, E as validate_each_argument, B as validate_slots, F as onMount, G as regenerator, H as onDestroy, g as element, f as space, l as claim_element, m as children, j as detach_dev, k as claim_space, p as attr_dev, I as set_style, r as add_location, u as insert_dev, v as append_dev, J as _slicedToArray, x as noop, K as destroy_each } from './client.966ab273.js';
 import { _ as _asyncToGenerator } from './asyncToGenerator.5229e80b.js';
 
 function fade(node) {
@@ -28,10 +28,10 @@ var file = "src/components/Carousel.svelte";
 
 function get_each_context(ctx, list, i) {
   var child_ctx = ctx.slice();
-  child_ctx[2] = list[i];
-  child_ctx[4] = i;
+  child_ctx[3] = list[i];
+  child_ctx[5] = i;
   return child_ctx;
-} // (22:6) {#each images as item, i}
+} // (23:6) {#each images as item, i}
 
 
 function create_each_block(ctx) {
@@ -70,17 +70,17 @@ function create_each_block(ctx) {
     h: function hydrate() {
       if (img.src !== (img_src_value =
       /*item*/
-      ctx[2].img)) attr_dev(img, "src", img_src_value);
+      ctx[3].img)) attr_dev(img, "src", img_src_value);
       attr_dev(img, "alt", /*i*/
-      ctx[4]);
+      ctx[5]);
       set_style(img, "width", "100%");
       set_style(img, "height", "200px");
       set_style(img, "object-fit", "cover");
-      add_location(img, file, 24, 10, 594);
+      add_location(img, file, 25, 10, 634);
       attr_dev(div, "class", "mx-2 my-2");
-      add_location(div, file, 23, 8, 560);
+      add_location(div, file, 24, 8, 600);
       attr_dev(li, "class", "splide__slide");
-      add_location(li, file, 22, 6, 524);
+      add_location(li, file, 23, 6, 564);
     },
     m: function mount(target, anchor) {
       insert_dev(target, li, anchor);
@@ -93,7 +93,7 @@ function create_each_block(ctx) {
       /*images*/
       1 && img.src !== (img_src_value =
       /*item*/
-      ctx[2].img)) {
+      ctx[3].img)) {
         attr_dev(img, "src", img_src_value);
       }
     },
@@ -105,7 +105,7 @@ function create_each_block(ctx) {
     block: block,
     id: create_each_block.name,
     type: "each",
-    source: "(22:6) {#each images as item, i}",
+    source: "(23:6) {#each images as item, i}",
     ctx: ctx
   });
   return block;
@@ -115,6 +115,7 @@ function create_fragment(ctx) {
   var div1;
   var div0;
   var ul;
+  var div1_id_value;
   var each_value =
   /*images*/
   ctx[0];
@@ -139,6 +140,7 @@ function create_fragment(ctx) {
     },
     l: function claim(nodes) {
       div1 = claim_element(nodes, "DIV", {
+        id: true,
         class: true
       });
       var div1_nodes = children(div1);
@@ -162,11 +164,14 @@ function create_fragment(ctx) {
     },
     h: function hydrate() {
       attr_dev(ul, "class", "splide__list");
-      add_location(ul, file, 20, 2, 460);
+      add_location(ul, file, 21, 2, 500);
       attr_dev(div0, "class", "splide__track");
-      add_location(div0, file, 19, 1, 430);
+      add_location(div0, file, 20, 1, 470);
+      attr_dev(div1, "id", div1_id_value = "splide" +
+      /*id*/
+      ctx[1]);
       attr_dev(div1, "class", "splide");
-      add_location(div1, file, 18, 0, 408);
+      add_location(div1, file, 19, 0, 428);
     },
     m: function mount(target, anchor) {
       insert_dev(target, div1, anchor);
@@ -211,6 +216,14 @@ function create_fragment(ctx) {
 
         each_blocks.length = each_value.length;
       }
+
+      if (dirty &
+      /*id*/
+      2 && div1_id_value !== (div1_id_value = "splide" +
+      /*id*/
+      ctx[1])) {
+        attr_dev(div1, "id", div1_id_value);
+      }
     },
     i: noop,
     o: noop,
@@ -235,6 +248,7 @@ function instance($$self, $$props, $$invalidate) {
       $$props.$$scope;
   validate_slots("Carousel", slots, []);
   var images = $$props.images;
+  var id = $$props.id;
   var slider;
   onMount( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/regenerator.mark(function _callee() {
     var _yield$import, Splide;
@@ -244,12 +258,12 @@ function instance($$self, $$props, $$invalidate) {
         switch (_context.prev = _context.next) {
           case 0:
             _context.next = 2;
-            return Promise.all([import('./splide.esm.8309b659.js'), __inject_styles(["client-d6828986.css"])]).then(function(x) { return x[0]; }).then(function (n) { return n.s; });
+            return Promise.all([import('./splide.esm.12ca15b4.js'), __inject_styles(["client-d6828986.css"])]).then(function(x) { return x[0]; }).then(function (n) { return n.s; });
 
           case 2:
             _yield$import = _context.sent;
             Splide = _yield$import.default;
-            new Splide.default(".splide", {
+            new Splide.default("#splide" + id, {
               type: "loop",
               perPage: 4,
               focus: "center",
@@ -264,13 +278,14 @@ function instance($$self, $$props, $$invalidate) {
       }
     }, _callee);
   })));
-  var writable_props = ["images"];
+  var writable_props = ["images", "id"];
   Object.keys($$props).forEach(function (key) {
     if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn("<Carousel> was created with unknown prop '".concat(key, "'"));
   });
 
   $$self.$$set = function ($$props) {
     if ("images" in $$props) $$invalidate(0, images = $$props.images);
+    if ("id" in $$props) $$invalidate(1, id = $$props.id);
   };
 
   $$self.$capture_state = function () {
@@ -279,12 +294,14 @@ function instance($$self, $$props, $$invalidate) {
       onMount: onMount,
       fade: fade,
       images: images,
+      id: id,
       slider: slider
     };
   };
 
   $$self.$inject_state = function ($$props) {
     if ("images" in $$props) $$invalidate(0, images = $$props.images);
+    if ("id" in $$props) $$invalidate(1, id = $$props.id);
     if ("slider" in $$props) slider = $$props.slider;
   };
 
@@ -292,7 +309,7 @@ function instance($$self, $$props, $$invalidate) {
     $$self.$inject_state($$props.$$inject);
   }
 
-  return [images];
+  return [images, id];
 }
 
 var Carousel = /*#__PURE__*/function (_SvelteComponentDev) {
@@ -307,7 +324,8 @@ var Carousel = /*#__PURE__*/function (_SvelteComponentDev) {
 
     _this = _super.call(this, options);
     init(_assertThisInitialized(_this), options, instance, create_fragment, safe_not_equal, {
-      images: 0
+      images: 0,
+      id: 1
     });
     dispatch_dev("SvelteRegisterComponent", {
       component: _assertThisInitialized(_this),
@@ -324,11 +342,25 @@ var Carousel = /*#__PURE__*/function (_SvelteComponentDev) {
       console.warn("<Carousel> was created without expected prop 'images'");
     }
 
+    if (
+    /*id*/
+    ctx[1] === undefined && !("id" in props)) {
+      console.warn("<Carousel> was created without expected prop 'id'");
+    }
+
     return _this;
   }
 
   _createClass(Carousel, [{
     key: "images",
+    get: function get() {
+      throw new Error("<Carousel>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    },
+    set: function set(value) {
+      throw new Error("<Carousel>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    }
+  }, {
+    key: "id",
     get: function get() {
       throw new Error("<Carousel>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
     },
