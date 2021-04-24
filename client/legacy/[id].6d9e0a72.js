@@ -1,6 +1,5 @@
-import { G as regenerator, _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, d as _assertThisInitialized, e as dispatch_dev, S as SvelteComponentDev, s as safe_not_equal, g as element, f as space, L as svg_element, t as text, h as create_component, l as claim_element, m as children, j as detach_dev, k as claim_space, n as claim_text, o as claim_component, p as attr_dev, r as add_location, I as set_style, u as insert_dev, v as append_dev, w as mount_component, x as noop, y as transition_in, z as transition_out, A as destroy_component, B as validate_slots } from './client.966ab273.js';
+import { r as regenerator, _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, d as init, e as _assertThisInitialized, f as dispatch_dev, S as SvelteComponentDev, s as safe_not_equal, k as element, l as space, L as svg_element, C as text, m as claim_element, n as children, p as detach_dev, q as claim_space, F as claim_text, t as attr_dev, w as add_location, u as set_style, x as insert_dev, y as append_dev, A as noop, h as validate_slots } from './client.fb8cb239.js';
 import { _ as _asyncToGenerator } from './asyncToGenerator.5229e80b.js';
-import { C as Carousel } from './Carousel.aba482d8.js';
 
 function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
@@ -78,12 +77,6 @@ function create_fragment(ctx) {
   var t25;
   var a;
   var t26;
-  var t27;
-  var carousel;
-  var current;
-  carousel = new Carousel({
-    $$inline: true
-  });
   var block = {
     c: function create() {
       section0 = element("section");
@@ -155,8 +148,6 @@ function create_fragment(ctx) {
       t25 = space();
       a = element("a");
       t26 = text("Show more");
-      t27 = space();
-      create_component(carousel.$$.fragment);
       this.h();
     },
     l: function claim(nodes) {
@@ -393,8 +384,6 @@ function create_fragment(ctx) {
       div14_nodes.forEach(detach_dev);
       div15_nodes.forEach(detach_dev);
       div16_nodes.forEach(detach_dev);
-      t27 = claim_space(div17_nodes);
-      claim_component(carousel.$$.fragment, div17_nodes);
       div17_nodes.forEach(detach_dev);
       div18_nodes.forEach(detach_dev);
       div19_nodes.forEach(detach_dev);
@@ -404,13 +393,13 @@ function create_fragment(ctx) {
     h: function hydrate() {
       attr_dev(span0, "id", "blackOverlay");
       attr_dev(span0, "class", "w-full h-full absolute opacity-50 bg-black");
-      add_location(span0, file, 22, 6, 761);
+      add_location(span0, file, 21, 6, 699);
       attr_dev(div0, "class", "absolute top-0 w-full h-full bg-center bg-cover");
       set_style(div0, "background-image", "url(\"https://images.unsplash.com/photo-1499336315816-097655dcfbda?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2710&q=80\")");
-      add_location(div0, file, 18, 4, 487);
+      add_location(div0, file, 17, 4, 425);
       attr_dev(polygon, "class", "text-gray-300 fill-current");
       attr_dev(polygon, "points", "2560 0 2560 100 0 100");
-      add_location(polygon, file, 40, 8, 1256);
+      add_location(polygon, file, 39, 8, 1194);
       attr_dev(svg, "class", "absolute bottom-0 overflow-hidden");
       attr_dev(svg, "xmlns", "http://www.w3.org/2000/svg");
       attr_dev(svg, "preserveAspectRatio", "none");
@@ -418,87 +407,87 @@ function create_fragment(ctx) {
       attr_dev(svg, "viewBox", "0 0 2560 100");
       attr_dev(svg, "x", "0");
       attr_dev(svg, "y", "0");
-      add_location(svg, file, 31, 6, 1026);
+      add_location(svg, file, 30, 6, 964);
       attr_dev(div1, "class", "top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden");
       set_style(div1, "height", "70px");
-      add_location(div1, file, 27, 4, 882);
+      add_location(div1, file, 26, 4, 820);
       attr_dev(section0, "class", "relative block");
       set_style(section0, "height", "500px");
-      add_location(section0, file, 17, 0, 427);
+      add_location(section0, file, 16, 0, 365);
       attr_dev(img, "alt", "...");
       if (img.src !== (img_src_value = "./images/prof_1.jpeg")) attr_dev(img, "src", img_src_value);
       attr_dev(img, "class", "shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16");
       set_style(img, "max-width", "150px");
-      add_location(img, file, 58, 16, 1863);
+      add_location(img, file, 57, 16, 1801);
       attr_dev(div2, "class", "relative");
-      add_location(div2, file, 57, 14, 1824);
+      add_location(div2, file, 56, 14, 1762);
       attr_dev(div3, "class", "w-full lg:w-3/12 px-4 lg:order-2 flex justify-center");
-      add_location(div3, file, 54, 12, 1716);
+      add_location(div3, file, 53, 12, 1654);
       attr_dev(button, "class", "bg-pink-500 active:bg-pink-600 uppercase text-white font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1");
       attr_dev(button, "type", "button");
       set_style(button, "transition", "all 0.15s ease 0s");
-      add_location(button, file, 70, 16, 2340);
+      add_location(button, file, 69, 16, 2278);
       attr_dev(div4, "class", "py-6 px-3 mt-32 sm:mt-0");
-      add_location(div4, file, 69, 14, 2286);
+      add_location(div4, file, 68, 14, 2224);
       attr_dev(div5, "class", "w-full lg:w-4/12 px-4 lg:order-3 lg:text-right lg:self-center");
-      add_location(div5, file, 66, 12, 2169);
+      add_location(div5, file, 65, 12, 2107);
       attr_dev(span1, "class", "text-xl font-bold block uppercase tracking-wide text-gray-700");
-      add_location(span1, file, 82, 18, 2922);
+      add_location(span1, file, 81, 18, 2860);
       attr_dev(span2, "class", "text-sm text-gray-500");
-      add_location(span2, file, 85, 19, 3067);
+      add_location(span2, file, 84, 19, 3005);
       attr_dev(div6, "class", "mr-4 p-3 text-center");
-      add_location(div6, file, 81, 16, 2869);
+      add_location(div6, file, 80, 16, 2807);
       attr_dev(span3, "class", "text-xl font-bold block uppercase tracking-wide text-gray-700");
-      add_location(span3, file, 88, 18, 3213);
+      add_location(span3, file, 87, 18, 3151);
       attr_dev(span4, "class", "text-sm text-gray-500");
-      add_location(span4, file, 91, 19, 3358);
+      add_location(span4, file, 90, 19, 3296);
       attr_dev(div7, "class", "mr-4 p-3 text-center");
-      add_location(div7, file, 87, 16, 3160);
+      add_location(div7, file, 86, 16, 3098);
       attr_dev(span5, "class", "text-xl font-bold block uppercase tracking-wide text-gray-700");
-      add_location(span5, file, 94, 18, 3506);
+      add_location(span5, file, 93, 18, 3444);
       attr_dev(span6, "class", "text-sm text-gray-500");
-      add_location(span6, file, 97, 19, 3651);
+      add_location(span6, file, 96, 19, 3589);
       attr_dev(div8, "class", "lg:mr-4 p-3 text-center");
-      add_location(div8, file, 93, 16, 3450);
+      add_location(div8, file, 92, 16, 3388);
       attr_dev(div9, "class", "flex justify-center py-4 lg:pt-4 pt-8");
-      add_location(div9, file, 80, 14, 2801);
+      add_location(div9, file, 79, 14, 2739);
       attr_dev(div10, "class", "w-full lg:w-4/12 px-4 lg:order-1");
-      add_location(div10, file, 79, 12, 2740);
+      add_location(div10, file, 78, 12, 2678);
       attr_dev(div11, "class", "flex flex-wrap justify-center");
-      add_location(div11, file, 53, 10, 1660);
+      add_location(div11, file, 52, 10, 1598);
       attr_dev(h3, "class", "text-4xl font-semibold leading-normal mb-2 text-gray-800 mb-2");
-      add_location(h3, file, 103, 12, 3836);
+      add_location(h3, file, 102, 12, 3774);
       attr_dev(i, "class", "fas fa-map-marker-alt mr-2 text-lg text-gray-500");
-      add_location(i, file, 111, 14, 4117);
+      add_location(i, file, 110, 14, 4055);
       attr_dev(div12, "class", "text-sm leading-normal mt-0 mb-2 text-gray-500 font-bold uppercase");
-      add_location(div12, file, 108, 12, 3995);
+      add_location(div12, file, 107, 12, 3933);
       attr_dev(div13, "class", "text-center mt-12");
-      add_location(div13, file, 102, 10, 3792);
-      add_location(b0, file, 121, 20, 4548);
-      add_location(br0, file, 125, 20, 4712);
+      add_location(div13, file, 101, 10, 3730);
+      add_location(b0, file, 120, 20, 4486);
+      add_location(br0, file, 124, 20, 4650);
       attr_dev(p0, "class", "mb-4 text-lg leading-relaxed text-gray-800");
-      add_location(p0, file, 120, 16, 4473);
-      add_location(b1, file, 133, 20, 5425);
-      add_location(br1, file, 136, 20, 5534);
+      add_location(p0, file, 119, 16, 4411);
+      add_location(b1, file, 132, 20, 5363);
+      add_location(br1, file, 135, 20, 5472);
       attr_dev(p1, "class", "mb-4 text-lg leading-relaxed text-gray-800");
-      add_location(p1, file, 132, 16, 5350);
+      add_location(p1, file, 131, 16, 5288);
       attr_dev(a, "href", "#pablo");
       attr_dev(a, "class", "font-normal text-pink-500");
-      add_location(a, file, 141, 16, 5881);
+      add_location(a, file, 140, 16, 5819);
       attr_dev(div14, "class", "w-full lg:w-9/12 px-4");
-      add_location(div14, file, 119, 14, 4421);
+      add_location(div14, file, 118, 14, 4359);
       attr_dev(div15, "class", "flex flex-wrap justify-center");
-      add_location(div15, file, 118, 12, 4363);
+      add_location(div15, file, 117, 12, 4301);
       attr_dev(div16, "class", "mt-10 py-10 border-t border-gray-300 text-center");
-      add_location(div16, file, 117, 10, 4288);
+      add_location(div16, file, 116, 10, 4226);
       attr_dev(div17, "class", "px-6");
-      add_location(div17, file, 52, 8, 1631);
+      add_location(div17, file, 51, 8, 1569);
       attr_dev(div18, "class", "relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64");
-      add_location(div18, file, 49, 6, 1502);
+      add_location(div18, file, 48, 6, 1440);
       attr_dev(div19, "class", "container mx-auto px-4");
-      add_location(div19, file, 48, 4, 1459);
+      add_location(div19, file, 47, 4, 1397);
       attr_dev(section1, "class", "relative py-16 bg-gray-300");
-      add_location(section1, file, 47, 2, 1410);
+      add_location(section1, file, 46, 2, 1348);
     },
     m: function mount(target, anchor) {
       insert_dev(target, section0, anchor);
@@ -570,25 +559,14 @@ function create_fragment(ctx) {
       append_dev(div14, t25);
       append_dev(div14, a);
       append_dev(a, t26);
-      append_dev(div17, t27);
-      mount_component(carousel, div17, null);
-      current = true;
     },
     p: noop,
-    i: function intro(local) {
-      if (current) return;
-      transition_in(carousel.$$.fragment, local);
-      current = true;
-    },
-    o: function outro(local) {
-      transition_out(carousel.$$.fragment, local);
-      current = false;
-    },
+    i: noop,
+    o: noop,
     d: function destroy(detaching) {
       if (detaching) detach_dev(section0);
       if (detaching) detach_dev(t1);
       if (detaching) detach_dev(section1);
-      destroy_component(carousel);
     }
   };
   dispatch_dev("SvelteRegisterBlock", {
@@ -637,8 +615,7 @@ function instance($$self, $$props, $$invalidate) {
 
   $$self.$capture_state = function () {
     return {
-      preload: preload,
-      Carousel: Carousel
+      preload: preload
     };
   };
 

@@ -1,4 +1,4 @@
-import { C as identity, _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, s as safe_not_equal, d as _assertThisInitialized, e as dispatch_dev, D as _createClass, S as SvelteComponentDev, E as validate_each_argument, B as validate_slots, F as onMount, G as regenerator, H as onDestroy, g as element, f as space, l as claim_element, m as children, j as detach_dev, k as claim_space, p as attr_dev, I as set_style, r as add_location, u as insert_dev, v as append_dev, J as _slicedToArray, x as noop, K as destroy_each } from './client.966ab273.js';
+import { i as identity, _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, d as init, s as safe_not_equal, e as _assertThisInitialized, f as dispatch_dev, g as _createClass, S as SvelteComponentDev, v as validate_each_argument, h as validate_slots, o as onMount, r as regenerator, j as onDestroy, k as element, l as space, m as claim_element, n as children, p as detach_dev, q as claim_space, t as attr_dev, u as set_style, w as add_location, x as insert_dev, y as append_dev, z as _slicedToArray, A as noop, B as destroy_each, C as text, D as create_component, E as query_selector_all, F as claim_text, G as claim_component, H as mount_component, I as transition_in, J as transition_out, K as destroy_component } from './client.fb8cb239.js';
 import { _ as _asyncToGenerator } from './asyncToGenerator.5229e80b.js';
 
 function fade(node) {
@@ -21,10 +21,10 @@ function fade(node) {
   };
 }
 
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+function _createSuper$1(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$1(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-var file = "src/components/Carousel.svelte";
+function _isNativeReflectConstruct$1() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+var file$1 = "src/components/Carousel.svelte";
 
 function get_each_context(ctx, list, i) {
   var child_ctx = ctx.slice();
@@ -76,11 +76,11 @@ function create_each_block(ctx) {
       set_style(img, "width", "100%");
       set_style(img, "height", "200px");
       set_style(img, "object-fit", "cover");
-      add_location(img, file, 25, 10, 634);
+      add_location(img, file$1, 25, 10, 634);
       attr_dev(div, "class", "mx-2 my-2");
-      add_location(div, file, 24, 8, 600);
+      add_location(div, file$1, 24, 8, 600);
       attr_dev(li, "class", "splide__slide");
-      add_location(li, file, 23, 6, 564);
+      add_location(li, file$1, 23, 6, 564);
     },
     m: function mount(target, anchor) {
       insert_dev(target, li, anchor);
@@ -111,7 +111,7 @@ function create_each_block(ctx) {
   return block;
 }
 
-function create_fragment(ctx) {
+function create_fragment$1(ctx) {
   var div1;
   var div0;
   var ul;
@@ -164,14 +164,14 @@ function create_fragment(ctx) {
     },
     h: function hydrate() {
       attr_dev(ul, "class", "splide__list");
-      add_location(ul, file, 21, 2, 500);
+      add_location(ul, file$1, 21, 2, 500);
       attr_dev(div0, "class", "splide__track");
-      add_location(div0, file, 20, 1, 470);
+      add_location(div0, file$1, 20, 1, 470);
       attr_dev(div1, "id", div1_id_value = "splide" +
       /*id*/
       ctx[1]);
       attr_dev(div1, "class", "splide");
-      add_location(div1, file, 19, 0, 428);
+      add_location(div1, file$1, 19, 0, 428);
     },
     m: function mount(target, anchor) {
       insert_dev(target, div1, anchor);
@@ -234,7 +234,7 @@ function create_fragment(ctx) {
   };
   dispatch_dev("SvelteRegisterBlock", {
     block: block,
-    id: create_fragment.name,
+    id: create_fragment$1.name,
     type: "component",
     source: "",
     ctx: ctx
@@ -242,7 +242,7 @@ function create_fragment(ctx) {
   return block;
 }
 
-function instance($$self, $$props, $$invalidate) {
+function instance$1($$self, $$props, $$invalidate) {
   var _$$props$$$slots = $$props.$$slots,
       slots = _$$props$$$slots === void 0 ? {} : _$$props$$$slots;
       $$props.$$scope;
@@ -258,7 +258,7 @@ function instance($$self, $$props, $$invalidate) {
         switch (_context.prev = _context.next) {
           case 0:
             _context.next = 2;
-            return Promise.all([import('./splide.esm.12ca15b4.js'), __inject_styles(["client-d6828986.css"])]).then(function(x) { return x[0]; }).then(function (n) { return n.s; });
+            return Promise.all([import('./splide.esm.839eb5f5.js'), __inject_styles(["client-d6828986.css"])]).then(function(x) { return x[0]; }).then(function (n) { return n.s; });
 
           case 2:
             _yield$import = _context.sent;
@@ -315,7 +315,7 @@ function instance($$self, $$props, $$invalidate) {
 var Carousel = /*#__PURE__*/function (_SvelteComponentDev) {
   _inherits(Carousel, _SvelteComponentDev);
 
-  var _super = _createSuper(Carousel);
+  var _super = _createSuper$1(Carousel);
 
   function Carousel(options) {
     var _this;
@@ -323,7 +323,7 @@ var Carousel = /*#__PURE__*/function (_SvelteComponentDev) {
     _classCallCheck(this, Carousel);
 
     _this = _super.call(this, options);
-    init(_assertThisInitialized(_this), options, instance, create_fragment, safe_not_equal, {
+    init(_assertThisInitialized(_this), options, instance$1, create_fragment$1, safe_not_equal, {
       images: 0,
       id: 1
     });
@@ -331,7 +331,7 @@ var Carousel = /*#__PURE__*/function (_SvelteComponentDev) {
       component: _assertThisInitialized(_this),
       tagName: "Carousel",
       options: options,
-      id: create_fragment.name
+      id: create_fragment$1.name
     });
     var ctx = _this.$$.ctx;
     var props = options.props || {};
@@ -372,6 +372,213 @@ var Carousel = /*#__PURE__*/function (_SvelteComponentDev) {
   return Carousel;
 }(SvelteComponentDev);
 
-export { Carousel as C };
+var images1 = [{
+  img: "./images/sample_1.jpg"
+}, {
+  img: "./images/sample_3.jpg"
+}, {
+  img: "./images/sample_2.jpg"
+}, {
+  img: "./images/sample_3.jpg"
+}, {
+  img: "./images/sample_2.jpg"
+}];
+var images2 = [{
+  img: "./images/final_1.jpg"
+}, {
+  img: "./images/final_2.jpg"
+}, {
+  img: "./images/final_3.jpg"
+}, {
+  img: "./images/final_4.jpg"
+}];
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+var file = "src/routes/index.svelte";
+
+function create_fragment(ctx) {
+  var t0;
+  var h10;
+  var t1;
+  var t2;
+  var carousel0;
+  var t3;
+  var h11;
+  var t4;
+  var t5;
+  var carousel1;
+  var t6;
+  var h12;
+  var t7;
+  var current;
+  carousel0 = new Carousel({
+    props: {
+      images: images1,
+      id: 2
+    },
+    $$inline: true
+  });
+  carousel1 = new Carousel({
+    props: {
+      images: images2,
+      id: 1
+    },
+    $$inline: true
+  });
+  var block = {
+    c: function create() {
+      t0 = space();
+      h10 = element("h1");
+      t1 = text("Based on your Watchlists");
+      t2 = space();
+      create_component(carousel0.$$.fragment);
+      t3 = space();
+      h11 = element("h1");
+      t4 = text("New Releases");
+      t5 = space();
+      create_component(carousel1.$$.fragment);
+      t6 = space();
+      h12 = element("h1");
+      t7 = text("Trending");
+      this.h();
+    },
+    l: function claim(nodes) {
+      var head_nodes = query_selector_all("[data-svelte=\"svelte-1j3glzz\"]", document.head);
+      head_nodes.forEach(detach_dev);
+      t0 = claim_space(nodes);
+      h10 = claim_element(nodes, "H1", {
+        class: true
+      });
+      var h10_nodes = children(h10);
+      t1 = claim_text(h10_nodes, "Based on your Watchlists");
+      h10_nodes.forEach(detach_dev);
+      t2 = claim_space(nodes);
+      claim_component(carousel0.$$.fragment, nodes);
+      t3 = claim_space(nodes);
+      h11 = claim_element(nodes, "H1", {
+        class: true
+      });
+      var h11_nodes = children(h11);
+      t4 = claim_text(h11_nodes, "New Releases");
+      h11_nodes.forEach(detach_dev);
+      t5 = claim_space(nodes);
+      claim_component(carousel1.$$.fragment, nodes);
+      t6 = claim_space(nodes);
+      h12 = claim_element(nodes, "H1", {
+        class: true
+      });
+      var h12_nodes = children(h12);
+      t7 = claim_text(h12_nodes, "Trending");
+      h12_nodes.forEach(detach_dev);
+      this.h();
+    },
+    h: function hydrate() {
+      document.title = "\n        For You\n    ";
+      attr_dev(h10, "class", "mt-6  text-3xl font-extrabold text-gray-600");
+      add_location(h10, file, 11, 0, 199);
+      attr_dev(h11, "class", "mt-6  text-3xl font-extrabold text-gray-600");
+      add_location(h11, file, 16, 0, 336);
+      attr_dev(h12, "class", "mt-6  text-3xl font-extrabold text-gray-600");
+      add_location(h12, file, 21, 0, 456);
+    },
+    m: function mount(target, anchor) {
+      insert_dev(target, t0, anchor);
+      insert_dev(target, h10, anchor);
+      append_dev(h10, t1);
+      insert_dev(target, t2, anchor);
+      mount_component(carousel0, target, anchor);
+      insert_dev(target, t3, anchor);
+      insert_dev(target, h11, anchor);
+      append_dev(h11, t4);
+      insert_dev(target, t5, anchor);
+      mount_component(carousel1, target, anchor);
+      insert_dev(target, t6, anchor);
+      insert_dev(target, h12, anchor);
+      append_dev(h12, t7);
+      current = true;
+    },
+    p: noop,
+    i: function intro(local) {
+      if (current) return;
+      transition_in(carousel0.$$.fragment, local);
+      transition_in(carousel1.$$.fragment, local);
+      current = true;
+    },
+    o: function outro(local) {
+      transition_out(carousel0.$$.fragment, local);
+      transition_out(carousel1.$$.fragment, local);
+      current = false;
+    },
+    d: function destroy(detaching) {
+      if (detaching) detach_dev(t0);
+      if (detaching) detach_dev(h10);
+      if (detaching) detach_dev(t2);
+      destroy_component(carousel0, detaching);
+      if (detaching) detach_dev(t3);
+      if (detaching) detach_dev(h11);
+      if (detaching) detach_dev(t5);
+      destroy_component(carousel1, detaching);
+      if (detaching) detach_dev(t6);
+      if (detaching) detach_dev(h12);
+    }
+  };
+  dispatch_dev("SvelteRegisterBlock", {
+    block: block,
+    id: create_fragment.name,
+    type: "component",
+    source: "",
+    ctx: ctx
+  });
+  return block;
+}
+
+function instance($$self, $$props, $$invalidate) {
+  var _$$props$$$slots = $$props.$$slots,
+      slots = _$$props$$$slots === void 0 ? {} : _$$props$$$slots;
+      $$props.$$scope;
+  validate_slots("Routes", slots, []);
+  var writable_props = [];
+  Object.keys($$props).forEach(function (key) {
+    if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn("<Routes> was created with unknown prop '".concat(key, "'"));
+  });
+
+  $$self.$capture_state = function () {
+    return {
+      Carousel: Carousel,
+      images1: images1,
+      images2: images2
+    };
+  };
+
+  return [];
+}
+
+var Routes = /*#__PURE__*/function (_SvelteComponentDev) {
+  _inherits(Routes, _SvelteComponentDev);
+
+  var _super = _createSuper(Routes);
+
+  function Routes(options) {
+    var _this;
+
+    _classCallCheck(this, Routes);
+
+    _this = _super.call(this, options);
+    init(_assertThisInitialized(_this), options, instance, create_fragment, safe_not_equal, {});
+    dispatch_dev("SvelteRegisterComponent", {
+      component: _assertThisInitialized(_this),
+      tagName: "Routes",
+      options: options,
+      id: create_fragment.name
+    });
+    return _this;
+  }
+
+  return Routes;
+}(SvelteComponentDev);
+
+export default Routes;
 
 import __inject_styles from './inject_styles.fe622066.js';

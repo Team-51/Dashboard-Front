@@ -1,4 +1,4 @@
-import { N as createCommonjsModule, O as _typeof } from './client.966ab273.js';
+import { N as createCommonjsModule, O as _typeof } from './client.fb8cb239.js';
 
 var splide_esm = createCommonjsModule(function (module, exports) {
   /*!
